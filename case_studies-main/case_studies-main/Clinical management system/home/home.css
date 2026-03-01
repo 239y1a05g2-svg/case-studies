@@ -1,0 +1,154 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 30px;
+    background-color: #0a6ebd;
+}
+
+
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+    color: #9c831e;
+}
+
+/* WELCOME SECTION */
+.welcome {
+    padding: 50px 30px;
+    background: #f2f9ff;
+    text-align: center;
+}
+
+.welcome h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #0a6ebd;
+}
+
+.welcome p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.welcome strong {
+    font-size: 18px;
+    color: #222;
+}
+
+/* FEATURED SECTION */
+.featured-section {
+    padding: 50px 30px;
+    background: #ffffff;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 30px;
+    color: #0a6ebd;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.card {
+    background: #f9f9f9;
+    width: 260px;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #0a6ebd;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card span {
+    font-size: 14px;
+    color: #666;
+}
+
+/* UPDATES */
+.updates {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.update {
+    background: #f9f9f9;
+    width: 300px;
+    padding: 25px;
+    border-left: 6px solid #0a6ebd;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.update h4 {
+    margin-bottom: 10px;
+    color: #0a6ebd;
+}
+
+.update p {
+    color: #333;
+    line-height: 1.5;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .welcome h1 {
+        font-size: 26px;
+    }
+}
